@@ -2,37 +2,64 @@
 <html>
 <head>
     <title>Gestión de Congresos</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8"/>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/jquery-1.9.1.min.js"></script>
-    
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    
 </head>
 <body>
 
-<nav class="navbar">
-    <span class="nav-pills">
-        <a href="index.html">Cómo llegar</a>
-    </span>
+<div id="cabecera" class="row page-header">
+    <ul id="nav" class="nav nav-pills nav-stacked col-lg-2">
+        <li><a href="index.html">Cómo llegar</a></li>
+        <li><a href="docs/sala.html">Mapa de sala</a></li>
+        <li><a href="docs/conferencias.html">Tus conferencias</a></li>
+        <li><a href="docs/entradas.html">Tus entradas</a></li>
+    </ul>
     
-    <a href="docs/sala.html">Mapa de sala</a>
-    <a href="docs/conferencias.html">Tus conferencias</a>
-    <a href="docs/entradas.html">Tus entradas</a>
-</nav>
-
-
-
-<div class="container">
-    <div id="divNosotros">
-
-    </div>
-
-    <div id="divCliente">
-
+    <div class="col-lg-19">
+        <h1>Gestión de Congresos </h1>
     </div>
 </div>
 
+
+<div class="row">
+    <div class="col-lg-1"></div>
+
+    <div class="col-lg-10">
+        <div class="row">
+            <h2 class="modal-header">Cómo llegar</h2>
+        </div>
+
+
+        <div class="wrapper">
+            <img id="imgOculta" src="" style="display: none;"/>
+            <div class="row">
+                <div class="col-lg-1"></div>
+
+                <div class="col-lg-4">
+                    <canvas id="mapaSite" class="mapa" width="400" height="400"></canvas>
+                </div>
+
+                <div class="col-lg-2"></div>
+
+                <div class="col-lg-4">
+                    <canvas id="mapaCliente" class="mapa" width="400" height="400"></canvas>
+                </div>
+
+                <div class="col-lg-1"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-lg-1"></div>
+</div>
+
+        
+
+        <script src="Scripts/donde.js"></script>
 
 </body>
 </html>
